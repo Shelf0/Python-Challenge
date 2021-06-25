@@ -23,3 +23,12 @@ with open(csv_filepath) as csvfile:
         # If the candidates name is present on the candidate_dictionary, it will increment the corresponding value by 1
         
         candidate_dictionary[candidates_name] = candidate_dictionary.get(candidates_name, 0) + 1
+
+
+
+# This for loop iterates over the key,value pairings in the candidate dictionary
+# And finds out who has the max popular votes, and then sets the winner based on that
+    for (k, v) in candidate_dictionary.items():
+        if (v > max_popular_votes) :
+            max_popular_votes = v
+            winner = k
