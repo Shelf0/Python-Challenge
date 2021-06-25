@@ -2,7 +2,7 @@
 import csv
 
 #import CSV
-csv_filepath = './election_data.csv'
+csv_filepath = './Resources/election_data.csv'
 
 #setting Variables
 candidate_dictionary = {}
